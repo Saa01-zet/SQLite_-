@@ -1,0 +1,15 @@
+SELECT * FROM employees;
+SELECT name, position FROM employees;
+SELECT * FROM employees WHERE age > 27;
+SELECT * FROM employees WHERE salary > 70000;
+SELECT * FROM employees WHERE position = 'Программист';
+SELECT * FROM employees WHERE age < 30 AND salary > 60000;
+SELECT * FROM employees WHERE position = 'Программист' OR position = 'Тестировщик';
+SELECT * FROM employees ORDER BY age ASC;
+SELECT * FROM employees ORDER BY salary DESC;
+SELECT * FROM employees ORDER BY salary DESC LIMIT 2;
+SELECT * FROM employees ORDER BY age ASC LIMIT 1;
+UPDATE employees SET salary = 80000 WHERE name = 'Иван';
+UPDATE employees SET position = 'Старший дизайнер' WHERE name = 'Елена';
+DELETE FROM employees WHERE name = 'Петр';
+DELETE FROM employees WHERE salary < 60000;
